@@ -547,6 +547,90 @@ You can also connect the GitHub repository in your host's dashboard, so that eve
 
 ## FAQ
 
+### About the idea
+
+**Where did this game come from?**
+It was made for **DM2803 Transformative Change in Complex Systems**, a course in the Sustainable Digitalisation master's programme at KTH Royal Institute of Technology. The course asks students to do three things: name a **goal conflict**, show why a normal engineering method fails on it, and design an **intervention** that does not pretend the conflict is solved. Students must also check who the intervention favours, in the short and the long term: the organisation, people, other species and ecosystems.
+
+The case is real-world truck manufacturing. Scania set a science-based target to cut CO₂e per kilometre from its trucks *in use* by **20% by 2025** (compared with 2015). The project's source material reports that it reached **about 11%**, and that **more than 96%** of its emissions come from trucks on the road, not from the factory. (Check Scania's latest annual and sustainability report for the exact figures.) The planning deck treated 2030 as a place and built towards it. Hauliers did not buy that place, so the carbon stayed on the diesel trucks that actually ran.
+
+**Why is it called "No Show 2030"?**
+2030 was invited, but it did not show up. The chargers, the finance and the customers that were supposed to make the year real were not there when the trucks were ready, so the trucks became no-shows too.
+
+**What is African time philosophy?**
+It is a way of understanding time that the Kenyan philosopher and theologian **John S. Mbiti** described in his book *African Religions and Philosophy* (1969). He based it mainly on East African languages such as Kikamba and Gikuyu. Its core ideas:
+
+- **Time is made of events.** Time is not an empty line that exists on its own. It is the events that fill it. People reckon time by what happens ("when the cows are milked", "when the rains came"), not by numbers on a calendar.
+- **Two dimensions: *Sasa* and *Zamani*.** These are Swahili words. *Sasa* is the "now" period: the present, the recent past, and the **near future that is already taking shape**. *Zamani* is the deep past, where all events finally settle.
+- **The far future is almost empty.** Events far ahead have not started to happen, so in this view they are not yet real time. Mbiti calls them **"potential time"**, not "actual time". Time moves *backwards* from Sasa into Zamani, not forwards towards a distant goal.
+
+In short: **the near future is thick, and the far future is empty until something happens in it.**
+
+Two important cautions:
+- This is **one philosopher's account**, and it has been criticised. The Ghanaian philosopher **Kwame Gyekye**, for example, showed that Akan thought clearly includes a distant future, and other writers argue that Mbiti generalised from a few languages to a whole continent. Africa has many cultures and many ideas of time.
+- It is **not** the stereotype of "African time" meaning being late. That use of the phrase is unrelated and is not what this project draws on.
+
+**How is the game tied to Western versus African time philosophy?**
+The game puts two ideas of the future side by side and lets you watch them play out against each other.
+
+| | "Western" linear time | Event-time (after Mbiti) |
+|---|---|---|
+| What time is | An empty, measurable line that runs on its own. Newton described time that "flows equably without relation to anything external". | A composition of events. No events, no time. |
+| The future | A destination. A year like 2030 is a place you can plan to arrive at. | Thick near the present, empty far away. It only fills up as events start. |
+| How you plan | Pick the date, then work backwards to what must be built by then. | Look at what is already happening, and build on that. |
+| In the game | **The old deck**: "40% electric by 2030", whatever the world looks like | **Your plan**: commit trucks only where the chain of events is open |
+
+The rules carry the event-time idea directly:
+- An **in-motion** event is *actual time*: it has happened, so it counts in full.
+- An **adjacent** event is *potential time* on the edge of becoming actual: people and equipment are in place, so it counts half.
+- A **thin** event is a date with nothing behind it. In event-time it is not yet part of the future at all, so it counts **zero**.
+- Each lane's **depth** for each powertrain (thick, adjacent, thin or empty) is the same idea: diesel's future is thick, while electric's future on Mombasa – Kampala is empty.
+- A **no-show** is what linear time cannot see. The date arrives, but the event does not, so in event-time the future simply has not started.
+
+To be clear, the game does not claim that "Western people" or "African people" think only one way. Both kinds of reasoning exist everywhere. The point is that **one of them describes a truck market better**: a haulier decides by what is already in motion, not by the year printed on a slide. The two African lanes are in the game because freight there is real and important, not to illustrate the philosophy.
+
+**If African time philosophy inspired it, why doesn't the game say so on screen?**
+On purpose. The game is about the goal conflict, not about philosophy. The philosophy is the *engine* under the rules, and the screen shows what the engine does: thin, adjacent and in-motion events, open chains, and trucks that run or don't. When presenting, the advice is to mention it only if someone asks what the engine is made of, in one line: *event-time; the near future is thick and the far future is empty until something happens in it.* Then go back to the goal conflict.
+
+**Is this transformative?**
+Yes, but in a specific and limited way.
+
+*The goal conflict.* The climate target is real, and a manufacturer needs hauliers to buy the trucks. A plan that treats a year as a destination meets the target **on a slide** and misses it **on the road**. The game shows this with real numbers from its own rules. In Q3 2030 the old deck's paper carbon is about **61.7**, which looks well under the target of 80. But 20 of its trucks are stranded, so the carbon of the trucks that actually ran is about **80.6**, which misses the target, and the book loses money (−40).
+
+*Why the normal method fails.* Scenario planning counts what is **built**. Carbon is only cut by kilometres that are **driven**. So the method rewards building trucks that then sit in the yard.
+
+*The intervention is a planning rule, not a new truck.* The change is in how the future gets counted: **only events that are happening count as future.** In Donella Meadows' well-known list of *leverage points* (places to intervene in a system), this works on the system's **rules** and **information flows**, and it questions its **paradigm**: the belief that a named year is a forecast. That is deeper than changing a product, which is why it counts as transformative.
+
+*A shared language.* The event chain acts as a **boundary object**, a term from Star and Griesemer (1989) for something different groups can all read in their own way. Planners, a haulier and a sustainability lead can look at the same chain and agree that a missing charger is not a *delay* against 2030. It means 2030 **has not started yet**.
+
+*What it does not do.* It does not deliver the transition. It is a way to stop a **false** intervention, the kind that builds for a year instead of for the road. See the next two questions for who it favours and where it stops.
+
+**Who does it favour, in the short and the long term?**
+- **The organisation, short term:** fewer stranded trucks and a healthier book.
+- **Hauliers and drivers:** trucks that can actually work on their lane.
+- **Ecosystems, long term:** only if the kilometres are real. Cleaner trucks cut carbon only once they run, and the game's desk shows that opening those chains takes money and time.
+- **Other people in the system** (the driver, the clearing agent at the border, the grid operator) appear in the model only as **events**. They are not part of the decision, so the game cannot claim to serve them.
+
+**What are its limits?**
+- **The room still belongs to the manufacturer.** Everyone else is modelled, not consulted.
+- **It is short-term.** The core lesson is one replacement cycle, and the campaign is only four quarters.
+- **It does not fix the world.** It does not build the corridor, shorten the border queue, clean the grid, or address the mineral supply chain behind batteries.
+- **It could be misread** as "just keep building diesel". The intended reading is the opposite: put money into the events you can make happen, so that clean trucks have a road to run on.
+- **All numbers are simplified teaching values**, and there is one fixed seed, so the lesson is the same every time.
+
+**Could it become a real tool?**
+Possibly. The same rule could be used with a manufacturer's real routes and real events, and a product version would use their data instead of the classroom numbers.
+
+### Teaching with it
+
+**How do I demo it in about four minutes?**
+1. **Run the old deck first.** Open the Plan tab, click **Load the old deck** and press **Run**. Electric trucks sit in the yard. Paper carbon looked like about 62; the trucks that ran come in at about 80.6, over the target of 80, and the book is −40. Say: *"The plan hit the target on a slide and missed it on the road."*
+2. **Then plan by events.** Go back to Q3 2030 with **Restart this world** in the Guide tab (or reload the page). Then commit diesel only where its chain is open, leaving spare capacity where the electric chain is thin. Put all 12 Stockholm – Ruhr points on diesel, because biodiesel is already in motion there, so those trucks run at 40 instead of 100. One plan that works: **12 Stockholm, 8 Madrid, 10 Mombasa, 0 Johannesburg**, all diesel. Carbon comes in at about **72.3**, under the target. Cash is **+85**, and 75% of contracts are kept. Say: *"The target is real. The date was not."*
+3. **Name the intervention** as a change in the planning rule, not a new powertrain.
+4. **Close on the limits** (see above) before someone else raises them.
+
+### About the game
+
 **Is this a real forecast?**
 No. The lanes and events are a simplified, made-up setup for learning. The point is the *way of thinking*: plan around events that are happening, not around dates on a slide.
 
