@@ -5,7 +5,7 @@
 
 No Show 2030 is a 3D planning game that runs in your web browser. You run a truck factory. You decide which trucks to build for four long-haul freight routes. Then you see which trucks actually drive and which ones sit in the yard.
 
-The game began as a KTH project. It makes one point: plans that say *"40% electric trucks by 2030"* often fail. A date on a slide does not make chargers, workshops, bank loans or short border queues appear. A truck only runs when the things it depends on have **really happened**. In the game, these things are called **events**.
+The game began as a KTH project. It makes one point: plans that say _"40% electric trucks by 2030"_ often fail. A date on a slide does not make chargers, workshops, bank loans or short border queues appear. A truck only runs when the things it depends on have **really happened**. In the game, these things are called **events**.
 
 ---
 
@@ -29,12 +29,12 @@ The game began as a KTH project. It makes one point: plans that say *"40% electr
 
 ### What you need
 
-| Tool | Version | How to check |
-|---|---|---|
-| [Node.js](https://nodejs.org/) | 18 or newer (20 LTS or newer is best) | `node --version` |
-| npm | Comes with Node.js | `npm --version` |
-| [Git](https://git-scm.com/) | Any recent version | `git --version` |
-| A web browser | Recent Chrome, Edge, Firefox or Safari with **WebGL** turned on | Visit [get.webgl.org](https://get.webgl.org/) |
+| Tool                           | Version                                                         | How to check                                  |
+| ------------------------------ | --------------------------------------------------------------- | --------------------------------------------- |
+| [Node.js](https://nodejs.org/) | 18 or newer (20 LTS or newer is best)                           | `node --version`                              |
+| npm                            | Comes with Node.js                                              | `npm --version`                               |
+| [Git](https://git-scm.com/)    | Any recent version                                              | `git --version`                               |
+| A web browser                  | Recent Chrome, Edge, Firefox or Safari with **WebGL** turned on | Visit [get.webgl.org](https://get.webgl.org/) |
 
 ### Run it on your computer
 
@@ -56,26 +56,26 @@ The development server reloads the page by itself every time you save a file. To
 
 ### All commands
 
-| Command | What it does |
-|---|---|
-| `npm install` | Downloads every library listed in `package.json` into `node_modules/`. |
-| `npm run dev` | Starts a local server with live reload, for working on the code. |
-| `npm run build` | Checks all the TypeScript for errors, then builds a fast, small version of the site into `dist/`. |
+| Command           | What it does                                                                                          |
+| ----------------- | ----------------------------------------------------------------------------------------------------- |
+| `npm install`     | Downloads every library listed in `package.json` into `node_modules/`.                                |
+| `npm run dev`     | Starts a local server with live reload, for working on the code.                                      |
+| `npm run build`   | Checks all the TypeScript for errors, then builds a fast, small version of the site into `dist/`.     |
 | `npm run preview` | Serves the built `dist/` folder so you can test the real production build. Run `npm run build` first. |
 
 ---
 
 ## The idea behind the game
 
-This section explains *why* the game exists and what it is trying to teach. You don't need it to play, but the rules make much more sense once you have read it.
+This section explains _why_ the game exists and what it is trying to teach. You don't need it to play, but the rules make much more sense once you have read it.
 
 ### 1. Two ways to think about the future
 
 There are two common ways to plan for change.
 
-**Planning by date (the "year scenario").** You choose a year and a share: *"By 2030, 40% of new trucks will be electric."* Then you work backwards: if 40% are electric, carbon falls by X, so we build Y electric trucks. The date is the starting point, and everything else follows from it.
+**Planning by date (the "year scenario").** You choose a year and a share: _"By 2030, 40% of new trucks will be electric."_ Then you work backwards: if 40% are electric, carbon falls by X, so we build Y electric trucks. The date is the starting point, and everything else follows from it.
 
-**Planning by event.** You ask a different question: *"What has to be true in the world before someone will actually buy and use an electric truck on this road?"* You list those things: a charger the truck can reach, a workshop that can repair it, a bank willing to lend money for it, a border queue short enough to fit inside a driver's shift. Then you look at each one and ask: *Is it happening yet?*
+**Planning by event.** You ask a different question: _"What has to be true in the world before someone will actually buy and use an electric truck on this road?"_ You list those things: a charger the truck can reach, a workshop that can repair it, a bank willing to lend money for it, a border queue short enough to fit inside a driver's shift. Then you look at each one and ask: _Is it happening yet?_
 
 The game's motto, **"A date is not a future. An event is."**, says the second way is the honest one. A year on a slide does not build a charger. Real things built by real people do. Until they exist, the future on the slide is only a guess.
 
@@ -91,7 +91,7 @@ The three event states stand for how real something is:
 - **Adjacent**: something real has started: a pilot project, a signed letter of intent, a half-built site. It counts for **half**, because it might still stall.
 - **In motion**: it exists and works. It counts **in full**.
 
-On the 3D map you can *see* this difference. Thin events are see-through holograms, adjacent ones stand inside scaffolding, and in-motion ones are solid buildings with their lights on.
+On the 3D map you can _see_ this difference. Thin events are see-through holograms, adjacent ones stand inside scaffolding, and in-motion ones are solid buildings with their lights on.
 
 ### 3. "On paper" carbon versus real carbon
 
@@ -122,9 +122,9 @@ This means that **building more electric trucks does not, by itself, take work a
 
 The four lanes were chosen to show that "the future of trucking" is not one future:
 
-- **Stockholm – Ruhr** (EU core): a charger pilot exists and the grid is clean and live, but finance and payload are still thin. Electric is *close* here.
+- **Stockholm – Ruhr** (EU core): a charger pilot exists and the grid is clean and live, but finance and payload are still thin. Electric is _close_ here.
 - **Madrid – Lyon** (southern Europe): chargers and the tariff exist only as dates on a slide.
-- **Mombasa – Kampala** (East Africa): electric is *empty*. Nothing in its chain has closed. Diesel works because fuel, workshops, parts and a resale market are all already there.
+- **Mombasa – Kampala** (East Africa): electric is _empty_. Nothing in its chain has closed. Diesel works because fuel, workshops, parts and a resale market are all already there.
 - **Johannesburg – Lusaka** (Southern Africa): the border queue sets the clock for every powertrain. If a truck can't cross inside one driver shift, nothing else matters.
 
 A single global target, like "40% electric by 2030", treats these four roads as if they were the same. The game shows they are not. A plan that fits Stockholm can strand trucks in Kampala.
@@ -134,15 +134,15 @@ A single global target, like "40% electric by 2030", treats these four roads as 
 The **event desk** shows a second big idea: some events are **yours to build**, and others **belong to someone else**.
 
 - **Backing** your own events (training workshops, stocking parts, offering finance, guaranteeing to buy trucks back) always works. It costs money and takes one quarter per step. A truck maker really can do these things.
-- **Leaning** on outside actors (grid operators, charger companies, fuel suppliers, shippers, border agencies, fleet owners, regulators) only *raises the chance* that they deliver on their date. They keep their own clocks. Sometimes they show up. Sometimes there is a **no-show**, and the date slips.
+- **Leaning** on outside actors (grid operators, charger companies, fuel suppliers, shippers, border agencies, fleet owners, regulators) only _raises the chance_ that they deliver on their date. They keep their own clocks. Sometimes they show up. Sometimes there is a **no-show**, and the date slips.
 
-That is where the name **No Show 2030** comes from. Many plans quietly assume every outside actor delivers on time. The game makes you live with the ones who don't, and rewards you for putting money where you *do* have control.
+That is where the name **No Show 2030** comes from. Many plans quietly assume every outside actor delivers on time. The game makes you live with the ones who don't, and rewards you for putting money where you _do_ have control.
 
 ### 8. The old deck as a mirror
 
 The old deck plays every quarter beside you, in exactly the same world, with the same lucky and unlucky events. It never changes its plan: 50% diesel, 10% gas, 40% electric, every quarter.
 
-It is there as a fair comparison. Each quarter's report puts your result next to the old deck's. When the campaign ends, the **Book** star asks one simple question: *did watching the events make more money than following the date?* The **Carbon** star then asks whether the trucks that really ran met the final target.
+It is there as a fair comparison. Each quarter's report puts your result next to the old deck's. When the campaign ends, the **Book** star asks one simple question: _did watching the events make more money than following the date?_ The **Carbon** star then asks whether the trucks that really ran met the final target.
 
 ### 9. What the game leaves out
 
@@ -150,7 +150,7 @@ The game is a teaching model, not a forecast. All the numbers are simplified and
 
 ### The idea in one paragraph
 
-A plan built on a year assumes the world will be ready on that date. A plan built on events checks whether the world *is* ready, lane by lane, and invests in the missing pieces it can control. Trucks built for a world that hasn't arrived don't cut carbon. They sit in the yard and cost money. **Build the events first, then the trucks.**
+A plan built on a year assumes the world will be ready on that date. A plan built on events checks whether the world _is_ ready, lane by lane, and invests in the missing pieces it can control. Trucks built for a world that hasn't arrived don't cut carbon. They sit in the yard and cost money. **Build the events first, then the trucks.**
 
 ---
 
@@ -160,24 +160,24 @@ A plan built on a year assumes the world will be ready on that date. A plan buil
 
 It is **Q3 2030**. You plan production at a truck factory. You have **40 factory slots**, and each slot is one truck you can build this quarter. Four freight routes (the game calls them **lanes**) need trucks:
 
-| Key | Lane | Region | Length | Contract points |
-|---|---|---|---|---|
-| `1` | Stockholm – Ruhr | EU core | 1,450 km | 12 |
-| `2` | Madrid – Lyon | Southern EU | 1,100 km | 8 |
-| `3` | Mombasa – Kampala | Northern Corridor | 1,150 km | 10 |
-| `4` | Johannesburg – Lusaka | SADC | 1,600 km | 10 |
+| Key | Lane                  | Region            | Length   | Contract points |
+| --- | --------------------- | ----------------- | -------- | --------------- |
+| `1` | Stockholm – Ruhr      | EU core           | 1,450 km | 12              |
+| `2` | Madrid – Lyon         | Southern EU       | 1,100 km | 8               |
+| `3` | Mombasa – Kampala     | Northern Corridor | 1,150 km | 10              |
+| `4` | Johannesburg – Lusaka | SADC              | 1,600 km | 10              |
 
 On each lane you can build three kinds of truck (**powertrains**): **diesel**, **gas** or **electric**.
 
-Your boss has a slide deck that says *"40% electric by 2030"*. That plan, called **the old deck**, plays beside you every quarter in the same world. At the end you find out whether you beat it.
+Your boss has a slide deck that says _"40% electric by 2030"_. That plan, called **the old deck**, plays beside you every quarter in the same world. At the end you find out whether you beat it.
 
 ### One quarter, step by step
 
-1. **Plan.** Use the `+` and `−` buttons in the **Plan** tab to put your 40 slots on lanes and powertrains. The top bar shows *CO₂e on paper*: the carbon your plan *claims* if every truck ran.
+1. **Plan.** Use the `+` and `−` buttons in the **Plan** tab to put your 40 slots on lanes and powertrains. The top bar shows _CO₂e on paper_: the carbon your plan _claims_ if every truck ran.
 2. **Use the event desk (optional).** You get **3 desk actions** each quarter. Spend money from your treasury to make events happen (see [Back and Lean](#the-event-desk-back-and-lean)).
 3. **Run the quarter.** Click **Run** (or press `R`). Trucks drive out on the map. Trucks that can work drive the lane. Trucks that can't stay in the yard. This takes about 4.5 seconds. Press `Space` to skip it.
-4. **Read the book.** A report shows what you earned and how much carbon the trucks that ran *actually* produced. It also shows how the old deck did in the same world.
-5. **Next quarter.** Click **Next** (or press `N`). The news arrives first: which outside events showed up and which were *no-shows*. Then you plan again.
+4. **Read the book.** A report shows what you earned and how much carbon the trucks that ran _actually_ produced. It also shows how the old deck did in the same world.
+5. **Next quarter.** Click **Next** (or press `N`). The news arrives first: which outside events showed up and which were _no-shows_. Then you plan again.
 
 The campaign has four quarters: **Q3 2030 → Q4 2030 → Q1 2031 → Q2 2031**. The carbon target gets stricter each quarter.
 
@@ -204,11 +204,11 @@ An **event** is something that must be true in the real world before a haulier (
 
 Every event is in one of three states:
 
-| State | Meaning | Score | Looks like on the map |
-|---|---|---|---|
-| **In motion** | It is really happening: built, signed, priced, staffed. | 1 | A solid building with its lights on |
-| **Adjacent** | A pilot, a letter of intent, a half-built site. | ½ | A building inside scaffolding |
-| **Thin** | Only a date on a slide. | 0 | A see-through hologram |
+| State         | Meaning                                                 | Score | Looks like on the map               |
+| ------------- | ------------------------------------------------------- | ----- | ----------------------------------- |
+| **In motion** | It is really happening: built, signed, priced, staffed. | 1     | A solid building with its lights on |
+| **Adjacent**  | A pilot, a letter of intent, a half-built site.         | ½     | A building inside scaffolding       |
+| **Thin**      | Only a date on a slide.                                 | 0     | A see-through hologram              |
 
 ### Chains: when can a truck run?
 
@@ -217,7 +217,7 @@ Each lane has one **chain** per powertrain. A chain is a list of four events, so
 - The **chain score** is the average of its event scores.
 - A chain is **open** when its score is **0.75 or more**.
 - A truck can run only if its chain is open.
-- **Electric trucks also need a live grid.** Each lane has a separate "Grid power that is clean and live" event, and it must be *in motion*.
+- **Electric trucks also need a live grid.** Each lane has a separate "Grid power that is clean and live" event, and it must be _in motion_.
 
 **Worked example.** At the start, the electric chain on Stockholm – Ruhr is: in motion (1), in motion (1), thin (0), thin (0). The score is 2 ÷ 4 = **0.5**, so the chain is closed. Back the thin "Residual value a bank will finance" event once and it becomes adjacent, so the score becomes 2.5 ÷ 4 = 0.625. Back it again the next quarter and it becomes in motion, so the score becomes 3 ÷ 4 = **0.75**. Now the chain is open. Stockholm's grid is already in motion, so electric trucks can now run there.
 
@@ -231,15 +231,15 @@ So if a lane has 10 points and you send 8 diesel and 5 electric trucks, and both
 
 ### Money
 
-| Item | Amount |
-|---|---|
-| Each contract point won | **+5** |
-| Each slot you commit (whether the truck runs or not) | **−2** |
-| Each **stranded** truck: a gas or electric truck whose chain is closed (or electric with no live grid) | **−3 extra** |
-| Each **spare** slot you leave unused | **−0.5** (no charge if you commit nothing at all) |
-| Carbon fine (see below) | **−1 per point over the target** |
+| Item                                                                                                   | Amount                                            |
+| ------------------------------------------------------------------------------------------------------ | ------------------------------------------------- |
+| Each contract point won                                                                                | **+5**                                            |
+| Each slot you commit (whether the truck runs or not)                                                   | **−2**                                            |
+| Each **stranded** truck: a gas or electric truck whose chain is closed (or electric with no live grid) | **−3 extra**                                      |
+| Each **spare** slot you leave unused                                                                   | **−0.5** (no charge if you commit nothing at all) |
+| Carbon fine (see below)                                                                                | **−1 per point over the target**                  |
 
-Diesel trucks on a lane with no work left are *idle*, not *stranded*, so they pay no extra penalty.
+Diesel trucks on a lane with no work left are _idle_, not _stranded_, so they pay no extra penalty.
 
 You start with **20** in the **treasury**. After each quarter, the treasury changes by that quarter's result minus fines. Desk actions are paid from the treasury straight away.
 
@@ -247,19 +247,19 @@ You start with **20** in the **treasury**. After each quarter, the treasury chan
 
 Carbon is measured as **CO₂e per km**, compared with fossil diesel, which counts as 100:
 
-| Truck | CO₂e per km |
-|---|---|
-| Diesel, fossil fuel | 100 |
-| Diesel, when the lane's "Biodiesel at the pump" event is in motion | 40 |
-| Gas | 75 |
-| Electric on a live grid | 35 |
+| Truck                                                              | CO₂e per km |
+| ------------------------------------------------------------------ | ----------- |
+| Diesel, fossil fuel                                                | 100         |
+| Diesel, when the lane's "Biodiesel at the pump" event is in motion | 40          |
+| Gas                                                                | 75          |
+| Electric on a live grid                                            | 35          |
 
 Your carbon score is the **average over trucks that actually ran**, weighted by lane length. Idle and stranded trucks don't count. A truck that doesn't run doesn't cut carbon.
 
 The **target** gets stricter each quarter:
 
-| Quarter | Q3 2030 | Q4 2030 | Q1 2031 | Q2 2031 |
-|---|---|---|---|---|
+| Quarter          | Q3 2030   | Q4 2030   | Q1 2031   | Q2 2031   |
+| ---------------- | --------- | --------- | --------- | --------- |
 | Target (CO₂e/km) | 80 (−20%) | 75 (−25%) | 70 (−30%) | 60 (−40%) |
 
 If your number is over the target, you pay a fine of **1 per point over**, rounded to one decimal place.
@@ -275,11 +275,13 @@ The old deck is a fixed plan: **50% diesel, 10% gas, 40% electric**, spread over
 You get **3 desk actions per quarter**. There are two kinds of event:
 
 **Your own events** (workshops, parts, finance offers, buy-back guarantees) → **Back** it.
+
 - Thin → adjacent costs **10**. Adjacent → in motion costs **16**.
 - It **lands at the start of next quarter**, one step up, every time. Nothing is random here.
 - You can't back an event in the last quarter (Q2 2031), because there is no next quarter for it to land in.
 
 **Outside events** (the grid operator, charge-point operators, fuel suppliers, shippers, border agencies, fleet owners, regulators) → **Lean** on it.
+
 - Each outside event has a **due quarter** and a **chance** of showing up on that date (between 30% and 60%).
 - Leaning costs **8** and adds **+25%** to that chance. You can lean on the same event at most **twice**. The chance never goes above **95%**.
 - When the due quarter comes:
@@ -299,11 +301,11 @@ At the end of the game you can replay **the same world** (same seed) or start **
 
 After Q2 2031 the campaign ends and you get up to three stars:
 
-| Star | How to earn it |
-|---|---|
-| **Carbon** | Your last quarter (Q2 2031) met its target of 60. |
-| **Contracts** | On average you won **75% or more** of all contract points across the four quarters. |
-| **Book** | Your total result (quarter results minus fines minus desk spending) beat the old deck's total. |
+| Star          | How to earn it                                                                                 |
+| ------------- | ---------------------------------------------------------------------------------------------- |
+| **Carbon**    | Your last quarter (Q2 2031) met its target of 60.                                              |
+| **Contracts** | On average you won **75% or more** of all contract points across the four quarters.            |
+| **Book**      | Your total result (quarter results minus fines minus desk spending) beat the old deck's total. |
 
 ---
 
@@ -311,29 +313,29 @@ After Q2 2031 the campaign ends and you get up to three stars:
 
 ### Mouse
 
-| Action | What it does |
-|---|---|
-| Drag | Orbit (rotate) the camera |
-| Right-drag | Pan the camera |
-| Scroll | Zoom |
-| Hover over something | Show a tooltip |
-| Click a lane | Select it and fly the camera there |
+| Action                   | What it does                        |
+| ------------------------ | ----------------------------------- |
+| Drag                     | Orbit (rotate) the camera           |
+| Right-drag               | Pan the camera                      |
+| Scroll                   | Zoom                                |
+| Hover over something     | Show a tooltip                      |
+| Click a lane             | Select it and fly the camera there  |
 | Click a building (event) | Open its action card (Back or Lean) |
 
 ### Keyboard
 
-| Key | What it does |
-|---|---|
+| Key             | What it does                                          |
+| --------------- | ----------------------------------------------------- |
 | `1` `2` `3` `4` | Jump to a lane (in the order of the lane table above) |
-| `0` | Overview of the whole map |
-| `F` | Fly to the factory |
-| `L` | Show or hide event labels |
-| `R` | Run the quarter (while planning) |
-| `Space` | Skip the truck animation (while running) |
-| `N` | Go to the next quarter (when the report is open) |
-| `M` | Turn sound on or off |
-| `?` | Open the Guide tab |
-| `Esc` | Close a card or window, or go back to the overview |
+| `0`             | Overview of the whole map                             |
+| `F`             | Fly to the factory                                    |
+| `L`             | Show or hide event labels                             |
+| `R`             | Run the quarter (while planning)                      |
+| `Space`         | Skip the truck animation (while running)              |
+| `N`             | Go to the next quarter (when the report is open)      |
+| `M`             | Turn sound on or off                                  |
+| `?`             | Open the Guide tab                                    |
+| `Esc`           | Close a card or window, or go back to the overview    |
 
 ### Saved in your browser
 
@@ -442,7 +444,7 @@ Everyone is welcome, including first-time contributors.
 
 ### Step by step
 
-1. **Fork** the repository on GitHub (the *Fork* button, top right), or ask the owner for access.
+1. **Fork** the repository on GitHub (the _Fork_ button, top right), or ask the owner for access.
 2. **Clone** your fork and install:
    ```bash
    git clone https://github.com/<your-username>/no-show-2030.git
@@ -466,7 +468,7 @@ Everyone is welcome, including first-time contributors.
    git commit -m "Fix tooltip overlapping the sidebar on small screens"
    git push -u origin fix-tooltip-overlap
    ```
-8. **Open a pull request** on GitHub. Say *what* you changed, *why*, and *how you tested it*. A screenshot or short screen recording helps a lot for visual changes.
+8. **Open a pull request** on GitHub. Say _what_ you changed, _why_, and _how you tested it_. A screenshot or short screen recording helps a lot for visual changes.
 
 ### House rules for the code
 
@@ -491,6 +493,7 @@ These rules keep the game fair, testable and easy to change:
 ### Reporting a bug
 
 Open an issue on GitHub. Include:
+
 - What you did, step by step.
 - What you expected to happen.
 - What happened instead, with a screenshot if you can.
@@ -510,12 +513,12 @@ npm run preview   # optional: test the built site at http://localhost:4173
 
 **Vercel or Netlify settings:**
 
-| Setting | Value |
-|---|---|
-| Framework | Vite |
-| Install command | `npm install` |
-| Build command | `npm run build` |
-| Output directory | `dist` |
+| Setting          | Value           |
+| ---------------- | --------------- |
+| Framework        | Vite            |
+| Install command  | `npm install`   |
+| Build command    | `npm run build` |
+| Output directory | `dist`          |
 
 With the Vercel command-line tool you can deploy straight from the project folder:
 
@@ -533,15 +536,15 @@ You can also connect the GitHub repository in your host's dashboard, so that eve
 
 ## Troubleshooting
 
-| Problem | Fix |
-|---|---|
+| Problem                                           | Fix                                                                                                                                                                                                   |
+| ------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **"3D needs WebGL."** appears and there is no map | Your browser or graphics card has WebGL turned off. Turn on hardware acceleration in your browser settings, update your graphics drivers, or try another browser. The sidebar still works without 3D. |
-| `npm install` fails | Check that `node --version` shows 18 or newer. Delete `node_modules` and `package-lock.json` only as a last resort, then run `npm install` again. |
-| `npm run dev` says the port is in use | Vite will try the next port by itself. Read the address it prints in the terminal. |
-| `npm run build` shows TypeScript errors | Read the file name and line number in the message. Common causes are an unused variable or import, or a wrong type. Fix it and build again. |
-| The game feels slow | Close other heavy tabs. The game already lowers its resolution when the frame rate drops. Pressing `L` to hide labels also helps. |
-| No sound | Press `M` or click the sound button on the dock. Browsers only allow sound after you click or press a key on the page. |
-| The tour no longer appears | Click **Tour** on the camera dock. |
+| `npm install` fails                               | Check that `node --version` shows 18 or newer. Delete `node_modules` and `package-lock.json` only as a last resort, then run `npm install` again.                                                     |
+| `npm run dev` says the port is in use             | Vite will try the next port by itself. Read the address it prints in the terminal.                                                                                                                    |
+| `npm run build` shows TypeScript errors           | Read the file name and line number in the message. Common causes are an unused variable or import, or a wrong type. Fix it and build again.                                                           |
+| The game feels slow                               | Close other heavy tabs. The game already lowers its resolution when the frame rate drops. Pressing `L` to hide labels also helps.                                                                     |
+| No sound                                          | Press `M` or click the sound button on the dock. Browsers only allow sound after you click or press a key on the page.                                                                                |
+| The tour no longer appears                        | Click **Tour** on the camera dock.                                                                                                                                                                    |
 
 ---
 
@@ -552,37 +555,39 @@ You can also connect the GitHub repository in your host's dashboard, so that eve
 **Where did this game come from?**
 It was made for **DM2803 Transformative Change in Complex Systems**, a course in the Sustainable Digitalisation master's programme at KTH Royal Institute of Technology. The course asks students to do three things: name a **goal conflict**, show why a normal engineering method fails on it, and design an **intervention** that does not pretend the conflict is solved. Students must also check who the intervention favours, in the short and the long term: the organisation, people, other species and ecosystems.
 
-The case is real-world truck manufacturing. Scania set a science-based target to cut CO₂e per kilometre from its trucks *in use* by **20% by 2025** (compared with 2015). The project's source material reports that it reached **about 11%**, and that **more than 96%** of its emissions come from trucks on the road, not from the factory. (Check Scania's latest annual and sustainability report for the exact figures.) The planning deck treated 2030 as a place and built towards it. Hauliers did not buy that place, so the carbon stayed on the diesel trucks that actually ran.
+The case is real-world truck manufacturing. Scania set a science-based target to cut CO₂e per kilometre from its trucks _in use_ by **20% by 2025** (compared with 2015). The project's source material reports that it reached **about 11%**, and that **more than 96%** of its emissions come from trucks on the road, not from the factory. (Check Scania's latest annual and sustainability report for the exact figures.) The planning deck treated 2030 as a place and built towards it. Hauliers did not buy that place, so the carbon stayed on the diesel trucks that actually ran.
 
 **Why is it called "No Show 2030"?**
 2030 was invited, but it did not show up. The chargers, the finance and the customers that were supposed to make the year real were not there when the trucks were ready, so the trucks became no-shows too.
 
 **What is African time philosophy?**
-It is a way of understanding time that the Kenyan philosopher and theologian **John S. Mbiti** described in his book *African Religions and Philosophy* (1969). He based it mainly on East African languages such as Kikamba and Gikuyu. Its core ideas:
+It is a way of understanding time that the Kenyan philosopher and theologian **John S. Mbiti** described in his book _African Religions and Philosophy_ (1969). He based it mainly on East African languages such as Kikamba and Gikuyu. Its core ideas:
 
 - **Time is made of events.** Time is not an empty line that exists on its own. It is the events that fill it. People reckon time by what happens ("when the cows are milked", "when the rains came"), not by numbers on a calendar.
-- **Two dimensions: *Sasa* and *Zamani*.** These are Swahili words. *Sasa* is the "now" period: the present, the recent past, and the **near future that is already taking shape**. *Zamani* is the deep past, where all events finally settle.
-- **The far future is almost empty.** Events far ahead have not started to happen, so in this view they are not yet real time. Mbiti calls them **"potential time"**, not "actual time". Time moves *backwards* from Sasa into Zamani, not forwards towards a distant goal.
+- **Two dimensions: _Sasa_ and _Zamani_.** These are Swahili words. _Sasa_ is the "now" period: the present, the recent past, and the **near future that is already taking shape**. _Zamani_ is the deep past, where all events finally settle.
+- **The far future is almost empty.** Events far ahead have not started to happen, so in this view they are not yet real time. Mbiti calls them **"potential time"**, not "actual time". Time moves _backwards_ from Sasa into Zamani, not forwards towards a distant goal.
 
 In short: **the near future is thick, and the far future is empty until something happens in it.**
 
 Two important cautions:
+
 - This is **one philosopher's account**, and it has been criticised. The Ghanaian philosopher **Kwame Gyekye**, for example, showed that Akan thought clearly includes a distant future, and other writers argue that Mbiti generalised from a few languages to a whole continent. Africa has many cultures and many ideas of time.
 - It is **not** the stereotype of "African time" meaning being late. That use of the phrase is unrelated and is not what this project draws on.
 
 **How is the game tied to Western versus African time philosophy?**
 The game puts two ideas of the future side by side and lets you watch them play out against each other.
 
-| | "Western" linear time | Event-time (after Mbiti) |
-|---|---|---|
-| What time is | An empty, measurable line that runs on its own. Newton described time that "flows equably without relation to anything external". | A composition of events. No events, no time. |
-| The future | A destination. A year like 2030 is a place you can plan to arrive at. | Thick near the present, empty far away. It only fills up as events start. |
-| How you plan | Pick the date, then work backwards to what must be built by then. | Look at what is already happening, and build on that. |
-| In the game | **The old deck**: "40% electric by 2030", whatever the world looks like | **Your plan**: commit trucks only where the chain of events is open |
+|              | "Western" linear time                                                                                                             | Event-time (after Mbiti)                                                  |
+| ------------ | --------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
+| What time is | An empty, measurable line that runs on its own. Newton described time that "flows equably without relation to anything external". | A composition of events. No events, no time.                              |
+| The future   | A destination. A year like 2030 is a place you can plan to arrive at.                                                             | Thick near the present, empty far away. It only fills up as events start. |
+| How you plan | Pick the date, then work backwards to what must be built by then.                                                                 | Look at what is already happening, and build on that.                     |
+| In the game  | **The old deck**: "40% electric by 2030", whatever the world looks like                                                           | **Your plan**: commit trucks only where the chain of events is open       |
 
 The rules carry the event-time idea directly:
-- An **in-motion** event is *actual time*: it has happened, so it counts in full.
-- An **adjacent** event is *potential time* on the edge of becoming actual: people and equipment are in place, so it counts half.
+
+- An **in-motion** event is _actual time_: it has happened, so it counts in full.
+- An **adjacent** event is _potential time_ on the edge of becoming actual: people and equipment are in place, so it counts half.
 - A **thin** event is a date with nothing behind it. In event-time it is not yet part of the future at all, so it counts **zero**.
 - Each lane's **depth** for each powertrain (thick, adjacent, thin or empty) is the same idea: diesel's future is thick, while electric's future on Mombasa – Kampala is empty.
 - A **no-show** is what linear time cannot see. The date arrives, but the event does not, so in event-time the future simply has not started.
@@ -590,28 +595,30 @@ The rules carry the event-time idea directly:
 To be clear, the game does not claim that "Western people" or "African people" think only one way. Both kinds of reasoning exist everywhere. The point is that **one of them describes a truck market better**: a haulier decides by what is already in motion, not by the year printed on a slide. The two African lanes are in the game because freight there is real and important, not to illustrate the philosophy.
 
 **If African time philosophy inspired it, why doesn't the game say so on screen?**
-On purpose. The game is about the goal conflict, not about philosophy. The philosophy is the *engine* under the rules, and the screen shows what the engine does: thin, adjacent and in-motion events, open chains, and trucks that run or don't. When presenting, the advice is to mention it only if someone asks what the engine is made of, in one line: *event-time; the near future is thick and the far future is empty until something happens in it.* Then go back to the goal conflict.
+On purpose. The game is about the goal conflict, not about philosophy. The philosophy is the _engine_ under the rules, and the screen shows what the engine does: thin, adjacent and in-motion events, open chains, and trucks that run or don't. When presenting, the advice is to mention it only if someone asks what the engine is made of, in one line: _event-time; the near future is thick and the far future is empty until something happens in it._ Then go back to the goal conflict.
 
 **Is this transformative?**
 Yes, but in a specific and limited way.
 
-*The goal conflict.* The climate target is real, and a manufacturer needs hauliers to buy the trucks. A plan that treats a year as a destination meets the target **on a slide** and misses it **on the road**. The game shows this with real numbers from its own rules. In Q3 2030 the old deck's paper carbon is about **61.7**, which looks well under the target of 80. But 20 of its trucks are stranded, so the carbon of the trucks that actually ran is about **80.6**, which misses the target, and the book loses money (−40).
+_The goal conflict._ The climate target is real, and a manufacturer needs hauliers to buy the trucks. A plan that treats a year as a destination meets the target **on a slide** and misses it **on the road**. The game shows this with real numbers from its own rules. In Q3 2030 the old deck's paper carbon is about **61.7**, which looks well under the target of 80. But 20 of its trucks are stranded, so the carbon of the trucks that actually ran is about **80.6**, which misses the target, and the book loses money (−40).
 
-*Why the normal method fails.* Scenario planning counts what is **built**. Carbon is only cut by kilometres that are **driven**. So the method rewards building trucks that then sit in the yard.
+_Why the normal method fails._ Scenario planning counts what is **built**. Carbon is only cut by kilometres that are **driven**. So the method rewards building trucks that then sit in the yard.
 
-*The intervention is a planning rule, not a new truck.* The change is in how the future gets counted: **only events that are happening count as future.** In Donella Meadows' well-known list of *leverage points* (places to intervene in a system), this works on the system's **rules** and **information flows**, and it questions its **paradigm**: the belief that a named year is a forecast. That is deeper than changing a product, which is why it counts as transformative.
+_The intervention is a planning rule, not a new truck._ The change is in how the future gets counted: **only events that are happening count as future.** In Donella Meadows' well-known list of _leverage points_ (places to intervene in a system), this works on the system's **rules** and **information flows**, and it questions its **paradigm**: the belief that a named year is a forecast. That is deeper than changing a product, which is why it counts as transformative.
 
-*A shared language.* The event chain acts as a **boundary object**, a term from Star and Griesemer (1989) for something different groups can all read in their own way. Planners, a haulier and a sustainability lead can look at the same chain and agree that a missing charger is not a *delay* against 2030. It means 2030 **has not started yet**.
+_A shared language._ The event chain acts as a **boundary object**, a term from Star and Griesemer (1989) for something different groups can all read in their own way. Planners, a haulier and a sustainability lead can look at the same chain and agree that a missing charger is not a _delay_ against 2030. It means 2030 **has not started yet**.
 
-*What it does not do.* It does not deliver the transition. It is a way to stop a **false** intervention, the kind that builds for a year instead of for the road. See the next two questions for who it favours and where it stops.
+_What it does not do._ It does not deliver the transition. It is a way to stop a **false** intervention, the kind that builds for a year instead of for the road. See the next two questions for who it favours and where it stops.
 
 **Who does it favour, in the short and the long term?**
+
 - **The organisation, short term:** fewer stranded trucks and a healthier book.
 - **Hauliers and drivers:** trucks that can actually work on their lane.
 - **Ecosystems, long term:** only if the kilometres are real. Cleaner trucks cut carbon only once they run, and the game's desk shows that opening those chains takes money and time.
 - **Other people in the system** (the driver, the clearing agent at the border, the grid operator) appear in the model only as **events**. They are not part of the decision, so the game cannot claim to serve them.
 
 **What are its limits?**
+
 - **The room still belongs to the manufacturer.** Everyone else is modelled, not consulted.
 - **It is short-term.** The core lesson is one replacement cycle, and the campaign is only four quarters.
 - **It does not fix the world.** It does not build the corridor, shorten the border queue, clean the grid, or address the mineral supply chain behind batteries.
@@ -624,18 +631,19 @@ Possibly. The same rule could be used with a manufacturer's real routes and real
 ### Teaching with it
 
 **How do I demo it in about four minutes?**
-1. **Run the old deck first.** Open the Plan tab, click **Load the old deck** and press **Run**. Electric trucks sit in the yard. Paper carbon looked like about 62; the trucks that ran come in at about 80.6, over the target of 80, and the book is −40. Say: *"The plan hit the target on a slide and missed it on the road."*
-2. **Then plan by events.** Go back to Q3 2030 with **Restart this world** in the Guide tab (or reload the page). Then commit diesel only where its chain is open, leaving spare capacity where the electric chain is thin. Put all 12 Stockholm – Ruhr points on diesel, because biodiesel is already in motion there, so those trucks run at 40 instead of 100. One plan that works: **12 Stockholm, 8 Madrid, 10 Mombasa, 0 Johannesburg**, all diesel. Carbon comes in at about **72.3**, under the target. Cash is **+85**, and 75% of contracts are kept. Say: *"The target is real. The date was not."*
+
+1. **Run the old deck first.** Open the Plan tab, click **Load the old deck** and press **Run**. Electric trucks sit in the yard. Paper carbon looked like about 62; the trucks that ran come in at about 80.6, over the target of 80, and the book is −40. Say: _"The plan hit the target on a slide and missed it on the road."_
+2. **Then plan by events.** Go back to Q3 2030 with **Restart this world** in the Guide tab (or reload the page). Then commit diesel only where its chain is open, leaving spare capacity where the electric chain is thin. Put all 12 Stockholm – Ruhr points on diesel, because biodiesel is already in motion there, so those trucks run at 40 instead of 100. One plan that works: **12 Stockholm, 8 Madrid, 10 Mombasa, 0 Johannesburg**, all diesel. Carbon comes in at about **72.3**, under the target. Cash is **+85**, and 75% of contracts are kept. Say: _"The target is real. The date was not."_
 3. **Name the intervention** as a change in the planning rule, not a new powertrain.
 4. **Close on the limits** (see above) before someone else raises them.
 
 ### About the game
 
 **Is this a real forecast?**
-No. The lanes and events are a simplified, made-up setup for learning. The point is the *way of thinking*: plan around events that are happening, not around dates on a slide.
+No. The lanes and events are a simplified, made-up setup for learning. The point is the _way of thinking_: plan around events that are happening, not around dates on a slide.
 
 **Why can't I hit the carbon target in the first quarter just by building electric trucks?**
-Because at the start every electric chain is closed. Electric trucks would be stranded: they cost money and cut no carbon. Look for cleaner trucks that *can* run, and use the desk to open chains for later quarters.
+Because at the start every electric chain is closed. Electric trucks would be stranded: they cost money and cut no carbon. Look for cleaner trucks that _can_ run, and use the desk to open chains for later quarters.
 
 **Why does the old deck lose?**
 It commits 40% electric trucks on a fixed date, whatever the state of the world. Those trucks can't run, so they are stranded.
