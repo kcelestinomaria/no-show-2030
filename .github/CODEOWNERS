@@ -1,0 +1,24 @@
+# Who reviews what. See "Architecture and folder structure" in docs/PLAN.md.
+# Later rules win, so the default comes first.
+
+*                         @lukiet @kcelestinomaria @nuh0804
+
+# Luke: tooling, content and data logic
+/package.json             @lukiet
+/package-lock.json        @lukiet
+/.github/                 @lukiet
+/src/content/             @lukiet
+/src/domain/              @lukiet
+
+# Celestine: styles, shared UI and the system map
+/src/styles/              @kcelestinomaria
+/src/ui/                  @kcelestinomaria
+/src/features/system-map/ @kcelestinomaria
+
+# Nuh: app state and screens
+/src/app/                 @nuh0804
+/src/features/intro/      @nuh0804
+/src/features/leverage/   @nuh0804
+/src/features/strategy/   @nuh0804
+/src/features/actions/    @nuh0804
+/src/features/consequences/ @nuh0804

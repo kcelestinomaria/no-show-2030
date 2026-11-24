@@ -10,11 +10,11 @@ setup, content,     shared UI and the        screens, wiring,
 data logic          relationship map         polish, release
 ```
 
-| Order | Person | Owns | Done when |
-| --- | --- | --- | --- |
-| 1 | **Luke** | Repo setup, tooling, all content, data logic | Every task in Luke's list is merged, CI is green, handoff note posted |
-| 2 | **Celestine** | Styles, shared UI pieces, the system relationship map | Every task in Celestine's list is merged, CI is green, handoff note posted |
-| 3 | **Nuh** | App state, all five screens, final checks, release | `v2.0` is tagged and deployed |
+| Order | Person        | Owns                                                  | Done when                                                                  |
+| ----- | ------------- | ----------------------------------------------------- | -------------------------------------------------------------------------- |
+| 1     | **Luke**      | Repo setup, tooling, all content, data logic          | Every task in Luke's list is merged, CI is green, handoff note posted      |
+| 2     | **Celestine** | Styles, shared UI pieces, the system relationship map | Every task in Celestine's list is merged, CI is green, handoff note posted |
+| 3     | **Nuh**       | App state, all five screens, final checks, release    | `v2.0` is tagged and deployed                                              |
 
 ---
 
@@ -45,9 +45,9 @@ Luke goes first because everything else reads his data. Work down the list in or
 - [ ] **L10**: Write the extra Screen D content agreed in L4 (for example beneficiaries and unintended effects).
 - [ ] **L11**: Write the intro, Screen A (leverage point and event-time philosophy) and reflection text in `content/copy.ts`.
 - [ ] **L12**: Write the three selectors in `domain/selectors.ts`, with unit tests:
-    - `actorsFor`: the actors across the chosen actions, without duplicates, each role tagged with its action.
-    - `buildSystemMap`: merge links, remove duplicates (two-way aware), compare with the baseline, record which actions produced each link.
-    - `consequencesFor`: consequences grouped into the four categories, each linked to its action.
+  - `actorsFor`: the actors across the chosen actions, without duplicates, each role tagged with its action.
+  - `buildSystemMap`: merge links, remove duplicates (two-way aware), compare with the baseline, record which actions produced each link.
+  - `consequencesFor`: consequences grouped into the four categories, each linked to its action.
 - [ ] **L13**: Write the content-integrity tests: every actor id exists, each option has exactly 3 actions, every action has at least 1 consequence per category, and ids are unique.
 - [ ] **L14**: Hand off to Celestine.
 
@@ -100,15 +100,15 @@ Nuh starts when Celestine's handoff note is posted, and finishes the job. Work d
 
 The current app is a 3D planning game, so almost none of its logic carries over. You split 40 factory slots across 4 freight lanes and 3 truck types, then play 4 quarters. The new brief has no slots, lanes, quarters, money or carbon scoring. It is a guided, content-driven explorer.
 
-| Area | Files | Verdict |
-| --- | --- | --- |
-| Game rules | `data.ts`, `engine.ts`, `campaign.ts` | Archive. Built on lanes, powertrains and quarters. |
-| 3D world | `three/World.ts`, `kit.ts`, `props.ts` | Archive. The new map is a graph of actors, which a 2D SVG does better. |
-| App shell and panels | `App.tsx`, `Sidebar.tsx`, `Overlays.tsx`, `ActionCard.tsx`, `Tour.tsx` | Archive. Reuse the welcome-screen and tooltip patterns. |
-| Design tokens | top of `styles.css` | Keep (Celestine, C1). |
-| Small UI pieces | `ui/bits.tsx`, `ui/sfx.ts` | Keep, remove old game imports (Celestine, C2). |
-| Toolchain | `package.json`, `vite.config.ts`, `tsconfig.json` | Keep. Remove three.js (Luke, L1). |
-| Ideas | README FAQ | Keep as Screen A content (Luke, L11). |
+| Area                 | Files                                                                  | Verdict                                                                |
+| -------------------- | ---------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| Game rules           | `data.ts`, `engine.ts`, `campaign.ts`                                  | Archive. Built on lanes, powertrains and quarters.                     |
+| 3D world             | `three/World.ts`, `kit.ts`, `props.ts`                                 | Archive. The new map is a graph of actors, which a 2D SVG does better. |
+| App shell and panels | `App.tsx`, `Sidebar.tsx`, `Overlays.tsx`, `ActionCard.tsx`, `Tour.tsx` | Archive. Reuse the welcome-screen and tooltip patterns.                |
+| Design tokens        | top of `styles.css`                                                    | Keep (Celestine, C1).                                                  |
+| Small UI pieces      | `ui/bits.tsx`, `ui/sfx.ts`                                             | Keep, remove old game imports (Celestine, C2).                         |
+| Toolchain            | `package.json`, `vite.config.ts`, `tsconfig.json`                      | Keep. Remove three.js (Luke, L1).                                      |
+| Ideas                | README FAQ                                                             | Keep as Screen A content (Luke, L11).                                  |
 
 Habits not to repeat: a 958-line component with 26 props, callbacks passed through many layers, a circular import between `App.tsx` and `Sidebar.tsx`, one 3,514-line global stylesheet, copied localStorage helpers, and no tests or CI.
 
@@ -116,15 +116,15 @@ Habits not to repeat: a 958-line component with 26 props, callbacks passed throu
 
 These are things the brief leaves undefined. The named person writes or settles them.
 
-| Gap | What to do | Who |
-| --- | --- | --- |
-| No role text for actors | Write a short role for each actor in each action | Luke (L8) |
-| The same actor is named in different ways | One canonical id per actor, with a variant table | Luke (L6) |
-| Some arrows point to facilities or outcomes, not actors | Model them as a second node type: system elements | Luke (L5), Celestine (C6) |
-| No baseline to show what is new or changed | Agree and write today's relationships | Luke (L4, L9) |
-| Screen D asks for more detail than the brief gives | Agree the scope, then write it | Luke (L4, L10) |
-| Two-way relationships (↔) | Direction field in the data; the merge treats A↔B and B↔A as one link | Luke (L5, L12) |
-| Screen A shows the philosophy, which the old README kept off screen on purpose | Accept the reversal and adapt the FAQ text | Luke (L11) |
+| Gap                                                                            | What to do                                                            | Who                       |
+| ------------------------------------------------------------------------------ | --------------------------------------------------------------------- | ------------------------- |
+| No role text for actors                                                        | Write a short role for each actor in each action                      | Luke (L8)                 |
+| The same actor is named in different ways                                      | One canonical id per actor, with a variant table                      | Luke (L6)                 |
+| Some arrows point to facilities or outcomes, not actors                        | Model them as a second node type: system elements                     | Luke (L5), Celestine (C6) |
+| No baseline to show what is new or changed                                     | Agree and write today's relationships                                 | Luke (L4, L9)             |
+| Screen D asks for more detail than the brief gives                             | Agree the scope, then write it                                        | Luke (L4, L10)            |
+| Two-way relationships (↔)                                                      | Direction field in the data; the merge treats A↔B and B↔A as one link | Luke (L5, L12)            |
+| Screen A shows the philosophy, which the old README kept off screen on purpose | Accept the reversal and adapt the FAQ text                            | Luke (L11)                |
 
 How the brief's two flow descriptions line up: Intro and Screen A come before Step 1. Screen B is Step 1. Screen C covers Steps 2 and 3. Screen D is Step 4.
 
@@ -170,12 +170,12 @@ docs/                      this plan, HANDOFF.md, decisions/
 
 Luke collects these in L4. Answer in the team channel.
 
-| Decision | Recommendation | Used in |
-| --- | --- | --- |
-| What is the baseline (today's system)? | 4–6 links: Scania sells trucks to hauliers, hauliers carry freight for customers, energy providers supply fuel and electricity, banks finance trucks, workshops maintain trucks. | L9, C9 |
-| Should the event-time idea do work in the game, not just appear on Screen A? | Yes. Tag each Screen D consequence with the events it depends on, marked thin, adjacent or in motion. | L10, N8 |
-| Is the extra Screen D detail in scope? | Keep beneficiaries and unintended effects. Leave out investment figures: there is no sourced data. | L10 |
-| One strategy per run, or compare strategies? | One per run, with "try another strategy". | N6, N8 |
-| Keep sound and confetti? | Drop confetti. Keep sound optional and off by default. | N12 |
-| Who signs off the content? | One named person, with a review by the course team before release. | L11, N14 |
-| Where is it deployed? | Vercel or Netlify, with a preview deploy on every PR. | N14, N15 |
+| Decision                                                                     | Recommendation                                                                                                                                                                   | Used in  |
+| ---------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
+| What is the baseline (today's system)?                                       | 4–6 links: Scania sells trucks to hauliers, hauliers carry freight for customers, energy providers supply fuel and electricity, banks finance trucks, workshops maintain trucks. | L9, C9   |
+| Should the event-time idea do work in the game, not just appear on Screen A? | Yes. Tag each Screen D consequence with the events it depends on, marked thin, adjacent or in motion.                                                                            | L10, N8  |
+| Is the extra Screen D detail in scope?                                       | Keep beneficiaries and unintended effects. Leave out investment figures: there is no sourced data.                                                                               | L10      |
+| One strategy per run, or compare strategies?                                 | One per run, with "try another strategy".                                                                                                                                        | N6, N8   |
+| Keep sound and confetti?                                                     | Drop confetti. Keep sound optional and off by default.                                                                                                                           | N12      |
+| Who signs off the content?                                                   | One named person, with a review by the course team before release.                                                                                                               | L11, N14 |
+| Where is it deployed?                                                        | Vercel or Netlify, with a preview deploy on every PR.                                                                                                                            | N14, N15 |
