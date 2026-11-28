@@ -36,7 +36,7 @@ Luke goes first because everything else reads his data. Work down the list in or
 - [ ] **L1**: Tag the current `main` as `v1-campaign-game`. Move the 3D game into `legacy/src-3d/`. Remove `three` and `@types/three`. Create the empty folder skeleton from the [architecture section](#architecture-and-folder-structure).
 - [ ] **L2**: Add ESLint (typescript-eslint, react-hooks, jsx-a11y), Prettier, Vitest and Testing Library. Add npm scripts for lint, format, test and typecheck.
 - [ ] **L3**: Add the GitHub Actions CI workflow (typecheck, lint, test, build), a PR template and CODEOWNERS.
-- [ ] **L4**: Post the [decisions](#decisions-to-settle-before-luke-starts-l5) in the team channel, collect answers from Celestine and Nuh, and record them in `docs/decisions/`.
+- [x] **L4**: Settle the open product [decisions](#decisions) and record them in `docs/decisions/`. Done: see `docs/decisions/0001-product-decisions.md`.
 - [ ] **L5**: Write `domain/types.ts`, the shared data contract (Option, Action, Actor, SystemElement, Relationship, Consequence).
 - [ ] **L6**: Build the actor registry in `content/actors.ts`: canonical ids, names and categories. Map every name variant in the brief to one id.
 - [ ] **L7**: Write all four strategies into `content/options/`, one file each: Better Freight Utilisation, Multimodal Logistics, Flexible Freight Demand, Circular Vehicle Lifecycle.
@@ -166,16 +166,14 @@ docs/                      this plan, HANDOFF.md, decisions/
 - **Quality gates.** TypeScript strict mode. ESLint and Prettier (2-space indent, single quotes). CI runs typecheck, lint, test and build on every PR, and nothing merges red.
 - **PRs.** Small PRs, one task each, with the task id in the branch name (for example `c9-link-status-styles`). Use the PR template (what, why, how tested, screenshot). While the work is with one person, the previous person reviews their PRs when they can.
 
-### Decisions to settle before Luke starts L5
+### Decisions
 
-Luke collects these in L4. Answer in the team channel.
+Settled on 2026-11-28. The full record is in [`docs/decisions/0001-product-decisions.md`](decisions/0001-product-decisions.md).
 
-| Decision                                                                     | Recommendation                                                                                                                                                                   | Used in  |
-| ---------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
-| What is the baseline (today's system)?                                       | 4–6 links: Scania sells trucks to hauliers, hauliers carry freight for customers, energy providers supply fuel and electricity, banks finance trucks, workshops maintain trucks. | L9, C9   |
-| Should the event-time idea do work in the game, not just appear on Screen A? | Yes. Tag each Screen D consequence with the events it depends on, marked thin, adjacent or in motion.                                                                            | L10, N8  |
-| Is the extra Screen D detail in scope?                                       | Keep beneficiaries and unintended effects. Leave out investment figures: there is no sourced data.                                                                               | L10      |
-| One strategy per run, or compare strategies?                                 | One per run, with "try another strategy".                                                                                                                                        | N6, N8   |
-| Keep sound and confetti?                                                     | Drop confetti. Keep sound optional and off by default.                                                                                                                           | N12      |
-| Who signs off the content?                                                   | One named person, with a review by the course team before release.                                                                                                               | L11, N14 |
-| Where is it deployed?                                                        | Vercel or Netlify, with a preview deploy on every PR.                                                                                                                            | N14, N15 |
+| Decision                                                                     | Answer                                                                                                                                                                         | Used in          |
+| ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------- |
+| What is the baseline (today's system)?                                       | 5 links: Scania sells trucks to hauliers, hauliers carry freight for customers, energy providers supply fuel and electricity, banks finance trucks, workshops maintain trucks. | L9, C9           |
+| Should the event-time idea do work in the game, not just appear on Screen A? | Yes. Each Screen D consequence is tagged with the events it depends on, marked thin, adjacent or in motion.                                                                    | L5, L10, N8      |
+| Is the extra Screen D detail in scope?                                       | Yes for who benefits and unintended effects. No investment figures: there is no sourced data.                                                                                  | L5, L10, L13, N8 |
+| One strategy per run, or compare strategies?                                 | One per run, with "try another strategy".                                                                                                                                      | N1, N6, N8       |
+| Keep sound and confetti?                                                     | No confetti. Sound is optional and off by default.                                                                                                                             | N12              |
